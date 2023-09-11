@@ -1,6 +1,7 @@
 *, *::before, *::after {padding: 0; margin: 0; box-sizing: border-box;}
 a {text-decoration: none; color: inherit;}
 html, body {height: 100%; font: 400 16px/1 Rubik, sans-serif;}
+ol, ul, li {list-style: none;}
 button{ border: 0; }
 
 @font-face {
@@ -28,12 +29,13 @@ button{ border: 0; }
   font-weight: 800;
 }
 [class*=__container]{
-  max-width: 1040px;
-  padding: 0 5px;
+  max-width: 1152px;
+  padding: 0 40px;
   margin: 0 auto;
 }
 
 :root{
+  --color-black: #000;
   --color-blue: #4285F4;
   --color-red: #EC5863;
   --color-white: #FCFDFE;

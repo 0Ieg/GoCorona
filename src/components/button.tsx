@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 
 const ButtonS = styled.button`
+height: max-content;
 text-transform: uppercase;
 border-radius: 5px;
 transition: background-color 0.3s linear;
@@ -14,7 +15,7 @@ transition: background-color 0.3s linear;
 }
 a{
   display: block;
-  font: 800 20px Raleway;
+  font: 800 16px Raleway;
   padding: 12px 30px;
   color: var(--color-white);
 }
