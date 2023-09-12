@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
-import { Button } from './button';
+import { Button } from '../button';
+import logo from '../../bll/images/logo.svg'
 
 const HeaderS = styled.header`
 height: 100px;
@@ -9,10 +10,19 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 .logo{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .image{
+    width: 32px;
+  }
   .name{
     font: 700 18px Rubik;
     .black_letters{color: var(--color-black);}
-    .red_letters{color: var(--color-red);}
+    .red_letters{color: var(--color-blue); transition: color 0.1s linear;}
+  }
+  &:hover .red_letters{
+    color: var(--color-red);
   }
 }
 .menu .menu__list{
@@ -23,7 +33,7 @@ justify-content: space-between;
   a{
     padding: 10px;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
-    transition: all 0.05s linear;
+    transition: all 0.1s linear;
     &.active{
       border-bottom-color: var(--color-blue);
     }
@@ -37,13 +47,13 @@ justify-content: space-between;
 export const Header:FC = ()=>{
   return(
     <HeaderS>
-      <div className="logo">
-        <div className="image"></div>
+      <NavLink to={'/'} className="logo">
+        <img src={logo} className="image"/>
         <div className="name">
           <span className="black_letters">Go</span>
           <span className="red_letters">Corona</span>
         </div>
-      </div>
+      </NavLink>
       <nav className="menu">
         <ul className="menu__list">
           <li className="menu__item"><NavLink to={'home'}>HOME</NavLink></li>

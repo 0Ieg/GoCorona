@@ -6,7 +6,7 @@ const ButtonS = styled.button`
 height: max-content;
 text-transform: uppercase;
 border-radius: 5px;
-transition: background-color 0.3s linear;
+transition: background-color 0.1s linear;
 &.color_blue{
   background-color: var(--color-blue);
 }
