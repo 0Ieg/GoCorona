@@ -62,7 +62,7 @@ export const Header:FC = ()=>{
           <li className="menu__item"><NavLink to={'contact'}>CONTACT US</NavLink></li>
         </ul>
       </nav>
-      <Button path='download' color={'blue'}/>
+      <Button path='download' title='download' color={'blue'}/>
     </HeaderS>
   )
 }

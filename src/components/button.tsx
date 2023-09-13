@@ -9,9 +9,15 @@ border-radius: 5px;
 transition: background-color 0.1s linear;
 &.color_blue{
   background-color: var(--color-blue);
+  &:hover{
+    background-color: var(--color-red);
+  }
 }
 &.color_red{
   background-color: var(--color-red);
+  &:hover{
+    background-color: var(--color-blue);
+  }
 }
 a{
   display: block;
@@ -19,15 +25,12 @@ a{
   padding: 12px 30px;
   color: var(--color-white);
 }
-&:hover{
-  background-color: var(--color-red);
-}
 `
-export const Button:FC<{path:string, color:string}> = (props)=>{
-  const {path, color} = props
+export const Button:FC<{path:string, title:string, color:string}> = (props)=>{
+  const {path, title, color} = props
   return(
     <ButtonS className={color=='blue'?'color_blue':'color_red'}>
-      <NavLink to={path}>{path}</NavLink>
+      <NavLink to={path}>{title}</NavLink>
     </ButtonS>
   )
 }
