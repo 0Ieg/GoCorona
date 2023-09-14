@@ -9,6 +9,11 @@ height: 100px;
 display: flex;
 align-items: center;
 justify-content: space-between;
+background-color: #d3d4bc;
+position: absolute;
+z-index: 4;
+left: 0;
+right: 0;
 .logo{
   display: flex;
   align-items: center;
