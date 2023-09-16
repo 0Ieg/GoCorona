@@ -12,7 +12,7 @@ const AppS = styled.div`
 export const App:FC = ()=>{
   return (
     <Router>
-      <AppS className='app__container'>
+      <AppS>
         <Header/>
         <Main/>
       </AppS>

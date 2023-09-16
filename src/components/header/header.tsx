@@ -9,7 +9,6 @@ height: 100px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-background-color: #d3d4bc;
 position: absolute;
 z-index: 4;
 left: 0;
@@ -49,25 +48,27 @@ right: 0;
   }
 }
 `
-export const Header:FC = ()=>{
-  return(
-    <HeaderS>
-      <NavLink to={'/'} className="logo">
-        <img src={logo} className="image"/>
-        <div className="name">
-          <span className="black_letters">Go</span>
-          <span className="red_letters">Corona</span>
-        </div>
-      </NavLink>
-      <nav className="menu">
-        <ul className="menu__list">
-          <li className="menu__item"><NavLink to={'home'}>HOME</NavLink></li>
-          <li className="menu__item"><NavLink to={'features'}>FEATURES</NavLink></li>
-          <li className="menu__item"><NavLink to={'support'}>SUPPORT</NavLink></li>
-          <li className="menu__item"><NavLink to={'contact'}>CONTACT US</NavLink></li>
-        </ul>
-      </nav>
-      <Button path='download' title='download' color={'blue'}/>
-    </HeaderS>
+export const Header: FC = () => {
+  return (
+    <div className="__container">
+      <HeaderS>
+        <NavLink to={'/'} className="logo">
+          <img src={logo} className="image" />
+          <div className="name">
+            <span className="black_letters">Go</span>
+            <span className="red_letters">Corona</span>
+          </div>
+        </NavLink>
+        <nav className="menu">
+          <ul className="menu__list">
+            <li className="menu__item"><NavLink to={'home'}>HOME</NavLink></li>
+            <li className="menu__item"><NavLink to={'features'}>FEATURES</NavLink></li>
+            <li className="menu__item"><NavLink to={'support'}>SUPPORT</NavLink></li>
+            <li className="menu__item"><NavLink to={'contact'}>CONTACT US</NavLink></li>
+          </ul>
+        </nav>
+        <Button path='download' title='download' color={'blue'} />
+      </HeaderS>
+    </div>
   )
 }

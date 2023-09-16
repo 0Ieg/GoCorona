@@ -21,7 +21,7 @@ transition: background-color 0.1s linear;
 }
 a{
   display: block;
-  font: 800 16px Raleway;
+  font: 800 12px Raleway;
   padding: 12px 30px;
   color: var(--color-white);
 }
