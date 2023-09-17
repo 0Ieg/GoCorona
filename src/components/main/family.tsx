@@ -2,20 +2,29 @@ import { FC } from 'react'
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 import { Button } from '../button';
+import doctor from '../../bll/images/doctor.svg'
 
-const FamilyS = styled.div`
+const FamilyS = styled.section`
 height: 100dvh;
 position: relative;
+background-color: var(--color-background);
 &::before{
   content: '';
   background-color: var(--color-red);
-  height: 100%;
-  /* width: 200px; */
   border-radius: 20px 0 0 30px;
   position: absolute;
   z-index: 1;
+  top: 100px;
+  bottom: 0;
   right: 0;
   left: 68%;
+}
+.doctor{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 68%;
+  z-index: 2;
 }
 .__container{
   height: 100%;
@@ -44,6 +53,8 @@ position: relative;
   grid-template-areas: 'svg name' 'svg watch';
   justify-items: start;
   grid-gap: 12px;
+  position: absolute;
+  bottom: 47px;
   .svg{
     grid-area: svg;
     path{
@@ -80,6 +91,7 @@ position: relative;
 export const Family: FC = () => {
   return (
     <FamilyS>
+      <img src={doctor} className="doctor" />
       <div className="__container">
         <div className="content">
           <div className="title">Take care of yours family’s <span className='blueword'>health.</span></div>
