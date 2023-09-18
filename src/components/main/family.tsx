@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from "styled-components";
 import { Button } from '../button';
 import doctor from '../../bll/images/doctor.svg'
+import { Information } from '../information';
 
 const FamilyS = styled.section`
 height: 100dvh;
@@ -32,18 +33,13 @@ background-color: var(--color-background);
   align-items: center;
   z-index: 2;
 }
-.title{
-  font: 700 44px Rubik;
-  max-width: 497px;
-  .blueword{
-    color: var(--color-blue);
+.information{
+  .title{
+    max-width: 417px;
   }
-}
-.description{
-  max-width: 375px;
-  padding: 12px 0 20px;
-  font: 400 14px Rubik;
-  color: var(--color-gray);
+  .description{
+    max-width: 370px;
+  }
 }
 .video{
   background-color: transparent;
@@ -93,9 +89,8 @@ export const Family: FC = () => {
     <FamilyS>
       <img src={doctor} className="doctor" />
       <div className="__container">
-        <div className="content">
-          <div className="title">Take care of yours family’s <span className='blueword'>health.</span></div>
-          <div className="description">All in one destination for COVID-19 health queries.<br /> Consult 10,000+ health workers about your concerns.</div>
+        <div className="information">
+          <Information mainTitle='Take care of yours family’s ' colorTitle='health.' color='blue' descript='All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.'/>
           <Button path='getstarted' title='get started' color='red' />
         </div>
         <button className='video'>

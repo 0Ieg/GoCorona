@@ -26,7 +26,7 @@ a{
   color: var(--color-white);
 }
 `
-export const Button:FC<{path:string, title:string, color:string}> = (props)=>{
+export const Button:FC<{path:string, title:string, color:'red'|'blue'}> = (props)=>{
   const {path, title, color} = props
   return(
     <ButtonS className={color=='blue'?'color_blue':'color_red'}>
