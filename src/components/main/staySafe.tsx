@@ -25,7 +25,7 @@ return(
     <div className="__container">
       <div className="screen"></div>
       <div className="information">
-        <Information mainTitle={mainTitle} colorTitle={colorTitle} color='red' descript={descript}/>
+        <Information leftTitle={mainTitle} rightTitle={colorTitle} rightColor='red' descript={descript}/>
         <Button path='features' color='red' title='features'/>
       </div>
     </div>

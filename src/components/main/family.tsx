@@ -90,7 +90,7 @@ export const Family: FC = () => {
       <img src={doctor} className="doctor" />
       <div className="__container">
         <div className="information">
-          <Information mainTitle='Take care of yours family’s ' colorTitle='health.' color='blue' descript='All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.'/>
+          <Information leftTitle='Take care of yours family’s ' rightTitle='health.' rightColor='blue' descript='All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.'/>
           <Button path='getstarted' title='get started' color='red' />
         </div>
         <button className='video'>

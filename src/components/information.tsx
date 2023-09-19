@@ -19,11 +19,13 @@ const InformationS = styled.section`
 }
 `
 
-export const Information:FC<{mainTitle:string, colorTitle:string, color:'red'|'blue', descript:string}> = (props) => {
-  const {mainTitle, colorTitle, color, descript} = props
+export const Information:FC<{leftTitle:string, rightTitle:string, leftColor?:'red'|'blue', rightColor?:'red'|'blue', descript:string}> = (props) => {
+  const {leftTitle, rightTitle, leftColor, rightColor, descript} = props
   return (
     <InformationS>
-      <div className="title">{mainTitle}<span className={color==='red'?'redword':'blueword'}>{colorTitle}</span></div>
+      <div className="title">
+        <span className={leftColor?leftColor==='red'?'leftTitle redword':'leftTitle blueword':'leftTitle'}>{leftTitle}</span><span className={rightColor?rightColor==='red'?'rightTitle redword':'rightTitle blueword':'rightTitle'}>{rightTitle}</span>
+      </div>
       <div className="description">{descript}</div>
     </InformationS>
   )
