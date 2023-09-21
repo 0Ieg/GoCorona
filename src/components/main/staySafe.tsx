@@ -17,6 +17,7 @@ height: 100dvh;
   .description{
     max-width: 363px;
   }
+  bac
 }
 `
 export const StaySafe:FC = ()=>{
