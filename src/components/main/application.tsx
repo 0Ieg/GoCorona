@@ -25,6 +25,19 @@ return(
     <div className="information">
       <Information leftTitle='Healthcare' rightTitle=' at your Fingertips.' leftColor='red' descript='Bringing premium healthcare features to your fingertips. User friendly mobile platform to bring healthcare to your fingertips. Signup and be a part of the new health culture.'/>
     </div>
+    <div className="cards">
+      <div className="card">
+        <img src="" className="card__image" />
+        <div className="card__title"></div>
+        <div className="card__description"></div>
+      </div>
+      <div className="card">
+        <img src="" className="card__image" />
+        <div className="card__title"></div>
+        <div className="card__description"></div>
+      </div>
+
+    </div>
     <div className="links">
       <a href="https://play.google.com" target='_blank'>
         <img src={googlePlay}/>
