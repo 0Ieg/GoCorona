@@ -11,9 +11,17 @@ import card3 from '../../bll/images/Card3.svg'
 
 const ApplicationS = styled.section`
 height: 100dvh;
+padding: 80px 0 48px;
+.__container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .information{
+  align-self: center;
   .title{}
-  .description{max-width: 600px;}
+  .description{max-width: 600px; text-align: center;}
 }
 .cards{
   display: flex;

@@ -5,18 +5,16 @@ const CardS = styled.div`
 border-radius: 8px;
 width: 278px;
 height: 278px;
-padding: 30px 10px;
+padding: 35px 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
-box-shadow: 0 0 12px -6px var(--color-blue);
+box-shadow: 0 0 12px -6px var(--color-red);
 cursor: pointer;
 transition: box-shadow 0.1s linear;
 &:hover{
-  box-shadow: 0 0 10px -5px var(--color-red);
-}
-.image {
+  box-shadow: 0 0 10px -5px var(--color-blue);
 }
 .text{
   text-align: center;
