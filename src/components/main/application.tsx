@@ -8,6 +8,7 @@ import { Card } from '../card';
 import card1 from '../../bll/images/Card1.svg'
 import card2 from '../../bll/images/Card2.svg'
 import card3 from '../../bll/images/Card3.svg'
+import { SquareS } from '../square';
 
 const ApplicationS = styled.section`
 height: 100dvh;
@@ -27,6 +28,36 @@ padding: 80px 0 48px;
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  position: relative;
+  z-index: 2;
+  .square_1{
+    height: 65px;
+    width: 65px;
+    transform: rotate(-30deg);
+    bottom: -30px;
+    left: -20px;
+  }
+  .square_2{
+    height: 96px;
+    width: 96px;
+    transform: rotate(15deg);
+    top: 20px;
+    left: 22%;
+  }
+  .square_3{
+    height: 127px;
+    width: 127px;
+    transform: rotate(-30deg);
+    bottom: -30px;
+    left: 62%;
+  }
+  .square_4{
+    height: 65px;
+    width: 65px;
+    transform: rotate(-30deg);
+    top: -30px;
+    right: -20px;
+  }
 }
 .links{
   display: flex;
@@ -46,6 +77,10 @@ return(
         <Card icon={card1} title='Symptom Checker' description='Check if you are infected by COVID-19 with our Symptom Checker'/>
         <Card icon={card2} title='24x7 Medical support' description='Consult with 10,000+ health workers about your concerns.'/>
         <Card icon={card3} title='Conditions' description='Bringing premium healthcare features to your fingertips.'/>
+        <SquareS className='square_1'/>
+        <SquareS className='square_2'/>
+        <SquareS className='square_3'/>
+        <SquareS className='square_4'/>
       </div>
       <div className="links">
         <a href="https://play.google.com" target='_blank'>

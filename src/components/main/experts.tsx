@@ -8,7 +8,14 @@ import videoPlay from '../../bll/images/videoPlay.svg'
 
 const ExpertsS = styled.section`
 height: 100dvh;
+padding: 50px 0 105px;
 background-color: var(--color-background);
+.__container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 'statistics statistics' 'information video';
+}
 .statistics{
   width: 654px;
   height: 117px;
@@ -17,6 +24,7 @@ background-color: var(--color-background);
   justify-content: space-evenly;
   align-items: center;
   background-color: white;
+  grid-area: statistics;
   .value{
     color: var(--color-red);
     font: 700 36px Rubik;
@@ -37,6 +45,7 @@ background-color: var(--color-background);
   position: relative;
   cursor: pointer;
   z-index: 2;
+  grid-area: video;
   .video__play{
     position: absolute;
     z-index: 3;
@@ -46,6 +55,7 @@ background-color: var(--color-background);
   }
 }
 .information{
+  grid-area: information;
   .title{}
   .description{max-width: 363px;}
 }

@@ -13,6 +13,7 @@ justify-content: space-between;
 box-shadow: 0 0 12px -6px var(--color-red);
 cursor: pointer;
 transition: box-shadow 0.1s linear;
+background-color: white;
 &:hover{
   box-shadow: 0 0 10px -5px var(--color-blue);
 }
