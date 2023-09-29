@@ -11,7 +11,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 box-shadow: 0 0 12px -6px var(--color-red);
-cursor: pointer;
+cursor: default;
 transition: box-shadow 0.1s linear;
 background-color: white;
 &:hover{
@@ -45,4 +45,3 @@ export const Card:FC<{icon:string, title:string, description:string}> = (props)=
     </CardS>
   )
 }
-

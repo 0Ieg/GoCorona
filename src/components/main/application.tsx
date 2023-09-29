@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom';
 import styled from "styled-components";
 import { Information } from '../information';
 import googlePlay from '../../bll/images/googlePlay.svg'

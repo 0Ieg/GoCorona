@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { Link } from 'react-router-dom';
 import styled from "styled-components";
 import { Button } from '../button';
 import { Information } from '../information';
@@ -26,7 +25,6 @@ background-color: var(--color-background);
   position: relative;
   z-index: 2;
   .statistics__inner{
-    cursor: pointer;
     width: 654px;
     height: 117px;
     border-radius: 16px;
@@ -36,6 +34,7 @@ background-color: var(--color-background);
     background-color: white;
     box-shadow: 0 0 16px -5px var(--color-blue);
     transition: box-shadow 0.1s linear;
+    cursor: default;
     .square_1{
       width: 65px;
       height: 65px;
